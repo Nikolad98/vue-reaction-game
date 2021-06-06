@@ -115,7 +115,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
+    /*background-color: rgb(20, 20, 20);*/
+    background-image: url(../assets/clickMe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     left: calc(700px - 200px);
 }
