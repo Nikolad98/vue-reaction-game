@@ -1,6 +1,6 @@
 <template>
   <h1 class="title">Reaction timer</h1>
-  <h2 class="ins">Click the square</h2>
+  <h2 class="ins">Click the button</h2>
   <div class="game-frame">
     <h1 class="levelB">{{ level }}</h1>
     <Game v-if="isPlaying" :delay="delay" @gameBreak="breakGame" @levelUpdate = "levelUpdate"/>
@@ -25,7 +25,7 @@ import Break from './components/GameBreak.vue'
 export default {
   name: 'App',
   components: {
-    Game, Break
+    Game, Break, 
   },
   data() {
     return {
@@ -33,9 +33,9 @@ export default {
       delay: null,
       gameBreak: false,
       gameFinish: false,
-      strak: 0,
+      streak: 0,
       level: 1,
-      buttonDisabled: false
+      buttonDisabled: false,
     }
   },
   methods:{
